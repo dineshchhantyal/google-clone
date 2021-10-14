@@ -39,7 +39,7 @@ export default function Home() {
       </header>
       <form className="flex flex-col items-center content-center mt-4 flex-grow w-4/5" action="">
         <Image
-          src="https://logos-world.net/wp-content/uploads/2020/09/Google-Logo.png"
+          src="https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png"
           width="200"
           height="200"
           className="object-contain" />

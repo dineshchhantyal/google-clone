@@ -20,16 +20,16 @@ const Header = () => {
     }
     return (
         <header className="sticky top-0 bg-white">
-            <div className="flex w-full p-6 items-center">
+            <div className="flex w-full p-4 items-center">
                 <Image
-                    src="https://logos-world.net/wp-content/uploads/2020/09/Google-Logo.png"
-                    width="40"
-                    height="120"
+                    src="https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png"
+                    height="150"
+                    width="150"
                     onClick={() => router.push('/')}
                     className="object-contain cursor-pointer" />
 
                 <form action="" className="flex px-6 flex-grow py-3 ml-10 mr-5 border border-gray-200 shadow-lg rounded-full max-w-3xl items-center">
-                    <input ref={searchInputRef} className="flex-grow w-full focus:outline-none" type="text" name="" id="" />
+                    <input ref={searchInputRef} className="flex-grow w-full focus:outline-none" type="text" name="" id="" default={router.query.term} />
 
                     <XIcon className="h-7 text-gray-500 sm:mr-3 cursor-pointer transition duration-100 hover:scale-125"
                         onClick={() => { searchInputRef.current.value = "" }} />

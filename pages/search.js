@@ -10,7 +10,6 @@ const Search = ({ results }) => {
         <div>
             <Head><title>{router.query.term} - Google Search</title></Head>
             <Header />
-
             <SearchResults results={results} />
         </div>
 
@@ -20,7 +19,7 @@ const Search = ({ results }) => {
 export default Search;
 
 export async function getServerSideProps(context) {
-    const useDummyData = false;
+    const useDummyData = true;
     const API_KEY = process.env.API_KEY;
     const CONTEXT_KEY = process.env.CONTEXT_KEY;
     const startIndex = context.query.start || "0";
